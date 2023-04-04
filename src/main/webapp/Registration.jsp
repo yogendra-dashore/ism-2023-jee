@@ -21,8 +21,8 @@ Gender:
   <input type="radio" id="gender2" name="Gender" value="Female">Female<br><br>
 
 Email : <input type="text" name="Email" placeholder="Email"><br><br>
-Password : <input type="Password" name="Password" placeholder="Enter name"><br><br>
-ComfirmPassword : <input type="Password" name="ComfirmPassword" placeholder="Enter ComfirmPassword"><br><br>
+Password : <input type="text" name="Password" placeholder="Enter name"><br><br>
+ComfirmPassword : <input type="text" name="ComfirmPassword" placeholder="Enter ComfirmPassword"><br><br>
 <label for="City">City:</label>
     <select name="city">
     <option value="--">--</option>

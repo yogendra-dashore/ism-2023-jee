@@ -55,6 +55,14 @@ public class SinghupController extends HttpServlet  {
 		isError= true;
 		error.append("<br>Please Enter  Password");
 	}
+	else {
+		String alpha = "^(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9])(?=.*?[!#%])[A-Za-z0-9!#%]{8,32}$";
+		if (password.matches(alpha) == false) {
+			isError = true;
+			error.append("<br>Please Enter Valid Password");
+		}
+	
+	}
 	if(isError=true) {
 		out.print("<span style='color:red;'>" + error + "</span>");
 	}else {
